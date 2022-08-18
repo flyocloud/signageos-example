@@ -115,5 +115,5 @@ sos.onReady().then(async function () {
 
 	setInterval(function(){
 		showSlides(++SLIDEINDEX);
-	}, 100000);
+	}, loader.getTimeout());
 });
