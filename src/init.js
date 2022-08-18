@@ -24,9 +24,10 @@ export default class Init
 
         // send log files back to signageos
         // https://sdk.docs.signageos.io/api/js/content/latest/js-command#dispatch
+        // only 100 chars.
         await this.sos.command.dispatch({
-            type: 'Content.update', // mandatory *type* with custom value
-            content: JSON.stringify(apiResponse)
+            type: 'Content.update',
+            content: JSON.stringify(apiResponse.config)
         });
 
         // Save all files parallel
@@ -45,6 +46,13 @@ export default class Init
         }))
         .catch(function(err) {
             console.log('Download Error', err.message); 
+        });
+
+        await this.sos.command.dispatch({
+            type: 'Content.update',
+            content: JSON.stringify(slides.map(slide => {
+                return {uid: slide.uid}
+            }))
         });
 
         return slides
