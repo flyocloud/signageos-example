@@ -2,6 +2,8 @@
 
 A very basic SignageOS Applet which reads the data from Flyo SigangeOS Integration and display them as slides. More generic informations on [dev.flyo.cloud/integrations/signageos](https://dev.flyo.cloud/integrations/signageos.html).
 
+In order to release/deploy the SignageOS Applet see [Applet Upload](https://dev.flyo.cloud/integrations/signageos.html#applet-upload)
+
 ## Develop
 
 + Install depencies `npm install`, ensure to run the commands in the `Setup` sections afterwards.
