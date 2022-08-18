@@ -1,0 +1,46 @@
+{
+  "name": "flyo-example",
+  "version": "0.0.0",
+  "main": "dist/index.html",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "prepare": "npm run clean && npm run build",
+    "upload": "sos applet upload",
+    "clean": "npx rimraf dist",
+    "escheck": "npx es-check --module=false es5 dist/*.js",
+    "build": "webpack --mode production",
+    "postbuild": "npm run escheck",
+    "connect": "webpack --watch"
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "Flyo SignageOS applet example",
+  "repository": {},
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@signageos/front-applet": "^5.4.1",
+    "@signageos/front-display": "^9.20.0",
+    "@signageos/webpack-plugin": "^0.3.0",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  },
+  "sos": {
+    "config": [
+      {
+        "name": "api",
+        "mandatory": true,
+        "valueType": "URL",
+        "description": "The url to the flyo cloud api",
+        "placeholder": "https://api.flyo.cloud/integration/signageos/29/WZWj7lyl9dQ80PugsYZNh3-B25Q8glwmenBwrmhvFf9bG-aQYxW18sKsmc2-RtIMvz0SiqyWVHBwiSyKRNjTD5GKbniW"
+      }
+    ]
+  }
+}
