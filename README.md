@@ -1,16 +1,21 @@
 # SignageOS Flyo Example
 
+A very basic SignageOS Applet which reads the data from Flyo SigangeOS Integration and display them as slides. More generic informations on [dev.flyo.cloud/integrations/signageos](https://dev.flyo.cloud/integrations/signageos.html).
+
 ## Develop
 
-+ `npm start`
-+ visit `http://localhost:8090/`
++ Install depencies `npm install`, ensure to run the commands in the `Setup` sections afterwards.
++ Start local development server: `npm start`
++ visit in your browser `http://localhost:8090/`
 
-## Setup
+## Setup (Once)
+
+> This step must be done once after cloning (setting up) your signageos applet repository.
 
 + Ensure you have an active https://box.signageos.io account!
-+ (once) `npm install @signageos/cli -g` now the `sos` is gloabally available
-+ (once) `sos login`
-+ (once) `sos organization set-default`
++ `npm install @signageos/cli -g` now the `sos` is gloabally available
++ `sos login`
++ `sos organization set-default`
 
 ## Links
 

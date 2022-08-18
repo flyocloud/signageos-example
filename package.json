@@ -7,7 +7,7 @@
     "prepare": "npm run clean && npm run build",
     "upload": "sos applet upload",
     "clean": "npx rimraf dist",
-    "escheck": "npx es-check --module=false es5 dist/*.js",
+    "escheck": "npx es-check --module es5 dist/*.js",
     "build": "webpack --mode production",
     "postbuild": "npm run escheck",
     "connect": "webpack --watch"
@@ -39,7 +39,7 @@
         "mandatory": true,
         "valueType": "URL",
         "description": "The url to the flyo cloud api",
-        "placeholder": "https://api.flyo.cloud/integration/signageos/29/WZWj7lyl9dQ80PugsYZNh3-B25Q8glwmenBwrmhvFf9bG-aQYxW18sKsmc2-RtIMvz0SiqyWVHBwiSyKRNjTD5GKbniW"
+        "placeholder": "https://api.flyo.cloud/integration/signageos/<id>/<token>"
       }
     ]
   }
