@@ -23,3 +23,4 @@ In order to release/deploy the SignageOS Applet see [Applet Upload](https://dev.
 
 + [SignageOS Guide regarding Apps](https://docs.signageos.io/hc/en-us/articles/4405068855570-Introduction-to-applets)
 + [SignageOS Javascript SDK Reference](https://sdk.docs.signageos.io/)
++ [Problem with Emulator in Chrome](https://docs.signageos.io/hc/en-us/articles/4405238997138-Emulator-in-CLI-and-Box#adblock-issue-in-chrome)
