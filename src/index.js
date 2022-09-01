@@ -3,10 +3,8 @@ require('./index.css');
 import sos from '@signageos/front-applet';
 import Init from './init';
 
-console.log('start')
 // Wait on sos data are ready (https://docs.signageos.io/api/sos-applet-api/#onReady)
 sos.onReady().then(async function () {
-	console.log('ready')
 	const loader = new Init(sos)
 	const slides = await loader.getSlides()
 

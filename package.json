@@ -22,7 +22,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
-    "@signageos/front-applet": "^5.4.1",
+    "@signageos/front-applet": "^5.4.2",
     "@signageos/front-display": "^9.21.1",
     "@signageos/webpack-plugin": "^0.3.0",
     "babel-loader": "^8.2.5",
